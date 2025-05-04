@@ -1,0 +1,86 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Hub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      position: relative;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 20px;
+      background: linear-gradient(45deg, #7b61ff, #ff61d8, #61ffd9);
+      z-index: -1;
+      opacity: 0.7;
+      animation: glow 5s linear infinite;
+    }
+    @keyframes glow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 1em;
+      color: #fff;
+      background: linear-gradient(45deg, #7b61ff, #61ffd9);
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Welcome to Genius Hub</h1>
+    <p>Your free platform for batches, empowering learners with quality resources and collaborative growth -- all at zero cost.</p>
+    <a href="https://geniushubofficial.netlify.app/officialpage.html" class="btn" target="_blank">Explore Website</a>
+  </div>
+
+</body>
+</html>
